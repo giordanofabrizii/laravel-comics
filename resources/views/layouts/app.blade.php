@@ -7,17 +7,28 @@
     <link rel="stylesheet" href="{{ Vite::asset('resources/scss/app.scss') }}">
     @vite('resources/js/app.js')
     <title>
-        @yield('page-name')
+        @yield('page-name', 'Home')
     </title>
 </head>
 <body>
 
     @include('partials.header')
 
+    @yield('jumbo')
     <main>
-        @yield('main-content')
+
+
     </main>
 
     @include('partials.footer')
 </body>
 </html>
+
+<style>
+    .jumbo{
+        height: 30rem;
+        width: 100%;
+        object-fit: cover;
+        object-position: top
+    }
+</style>

@@ -1,36 +1,11 @@
 <header>
     <img src="{{ Vite::asset('resources/img/dc-logo.png') }}" alt="dc logo">
     <ul>
-        <li>
-            characters
-        </li>
-        <li class="active">
-            Comics
-        </li>
-        <li>
-            movies
-        </li>
-        <li>
-            tv
-        </li>
-        <li>
-            games
-        </li>
-        <li>
-            collectibles
-        </li>
-        <li>
-            videos
-        </li>
-        <li>
-            fans
-        </li>
-        <li>
-            news
-        </li>
-        <li>
-            shop
-        </li>
+        @foreach ($links as $link)
+            <li class="{{ $link['active'] ? 'active' : '' }}">
+                {{ $link['name'] }}
+            </li>
+        @endforeach
     </ul>
 </header>
 
@@ -42,13 +17,16 @@
         justify-content: space-between;
         max-width: 110rem;
         margin: 0 auto;
+        height: 7rem;
 
         ul{
             display: flex;
             li{
                 text-transform: uppercase;
                 margin: 1.5rem;
-                height: 2.5rem;
+                height: 7rem;
+                display: flex;
+                align-items: center;
 
                 &.active{
                     border-bottom: 5px solid #0282f9;
