@@ -17,8 +17,13 @@
     @yield('jumbo')
     <main>
 
+        @yield('main')
 
     </main>
+
+    <div class="info">
+        @yield('nav')
+    </div>
 
     @include('partials.footer')
 </body>

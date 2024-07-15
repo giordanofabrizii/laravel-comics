@@ -12,3 +12,106 @@ a{
     text-decoration: none;
     color: black;
 }
+
+main{
+
+    background-color: #1c1c1c;;
+
+    .container{
+        padding: 2rem;
+        position: relative;
+        width: 110rem;
+        margin: 0 auto;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        span {
+            text-transform: uppercase;
+            background-color: #0282f9;
+            padding: .7rem 1.2rem;
+            font-weight: 600;
+            position: absolute;
+            top: -1.3rem;
+            left: 1rem;
+        }
+
+        .comics{
+            display: flex;
+            flex-wrap: wrap;
+
+            article{
+                width: calc(100% / 6);
+                padding: 1rem;
+
+                &:hover img{
+                    animation: rotate .5s linear infinite;
+                }
+
+                img{
+                    width: 100%;
+                    aspect-ratio: 1/1;
+                    object-fit: cover;
+                    object-position: top;
+                }
+
+                h3 {
+                    text-transform: uppercase;
+                    font-size: 1rem;
+                    margin-top: 1rem;
+                }
+            }
+        }
+
+        button {
+            padding: .7rem 2.5rem;
+            text-transform: uppercase;
+            border: none;
+            background-color: #0282f9;
+            color: white;
+            font-weight: 600;
+            width: 12rem;
+        }
+    }
+}
+
+.nav{
+    padding: 2rem;
+    background-color: #0282f9;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    ul {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        li{
+            text-transform: uppercase;
+            padding: 2rem;
+            width: calc(100% / 5);
+
+            a{
+                display: flex;
+                align-items: center;
+
+                img {
+                    height: 5rem;
+                }
+
+                h2 {
+                    font-size: 1rem;
+                    margin: 0 1rem;
+                    color: white;
+                }
+            }
+
+            &:hover{
+                background-color: rgba(255,255,255,0.4);
+            }
+        }
+    }
+}
