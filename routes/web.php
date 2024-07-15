@@ -166,5 +166,127 @@ Route::get('/', function () {
             "type" => "graphic novel",
         ]
     ];
-    return view('pages.welcome', compact('links', 'data'));
+    $footerLinks = [
+        [
+            'name' => 'DC Comics',
+            'links' => [
+                [
+                    'title' => 'Characters',
+                    'url' => 'google.com',
+                ],
+                [
+                    'title' => 'Comics',
+                    'url' => 'google.com',
+                ],
+                [
+                    'title' => 'Movies',
+                    'url' => 'google.com',
+                ],
+                [
+                    'title' => 'TV',
+                    'url' => 'google.com',
+                ],
+                [
+                    'title' => 'Games',
+                    'url' => 'google.com',
+                ],
+                [
+                    'title' => 'Videos',
+                    'url' => 'google.com',
+                ],
+                [
+                    'title' => 'News',
+                    'url' => 'google.com',
+                ],
+            ],
+        ],
+        [
+            'name' => 'Shop',
+            'links' => [
+                [
+                    'title' => 'Shop DC',
+                    'url' => 'google.com',
+                ],
+                [
+                    'title' => 'Shop DC Collectibles',
+                    'url' => 'google.com',
+                ],
+            ],
+        ],
+        [
+            'name' => 'DC',
+            'links' => [
+                [
+                    'title' => 'Terms Of Use',
+                    'url' => 'google.com',
+                ],
+                [
+                    'title' => 'Privacy policy(New)',
+                    'url' => 'google.com',
+                ],
+                [
+                    'title' => 'Ad Choices',
+                    'url' => 'google.com',
+                ],
+                [
+                    'title' => 'Advertising',
+                    'url' => 'google.com',
+                ],
+                [
+                    'title' => 'Jobs',
+                    'url' => 'google.com',
+                ],
+                [
+                    'title' => 'Subscriptions',
+                    'url' => 'google.com',
+                ],
+                [
+                    'title' => 'Talent Workshops',
+                    'url' => 'google.com',
+                ],
+                [
+                    'title' => 'CSPC Certificates',
+                    'url' => 'google.com',
+                ],
+                [
+                    'title' => 'Ratings',
+                    'url' => 'google.com',
+                ],
+                [
+                    'title' => 'Shop Help',
+                    'url' => 'google.com',
+                ],
+                [
+                    'title' => 'Contact Us',
+                    'url' => 'google.com',
+                ],
+            ],
+        ],
+        [
+            'name' => 'Shop',
+            'links' => [
+                [
+                    'title' => 'DC',
+                    'url' => 'google.com',
+                ],
+                [
+                    'title' => 'MAD Magazine',
+                    'url' => 'google.com',
+                ],
+                [
+                    'title' => 'DC Kids',
+                    'url' => 'google.com',
+                ],
+                [
+                    'title' => 'DC Universe',
+                    'url' => 'google.com',
+                ],
+                [
+                    'title' => 'DC Power Visa',
+                    'url' => 'google.com',
+                ],
+            ],
+        ],
+    ];
+    return view('pages.welcome', compact('links', 'data','footerLinks'));
 });

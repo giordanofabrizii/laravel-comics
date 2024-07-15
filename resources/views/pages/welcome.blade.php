@@ -3,7 +3,7 @@
 @section('page-name', 'DC Comics')
 
 @section('jumbo')
-    <img class="jumbo" src="{{ Vite::asset('resources/img/jumbotron.jpg') }}" alt="s">
+    <img class="header-jumbo" src="{{ Vite::asset('resources/img/jumbotron.jpg') }}" alt="s">
 @endsection
 
 @section('main')
