@@ -1,4 +1,8 @@
 import './bootstrap';
 
 // importiamo scss
-import '~resopurces/scss/app.scss';
+import '~resources/scss/app.scss';
+
+import.meta.glob([
+    '../img/**'
+])
