@@ -17,52 +17,42 @@ Route::get('/', function () {
     $links = [
         [
             'name' => 'home',
-            'active' => false,
             'url' => '/'
         ],
         [
             'name' => 'comics',
-            'active' => true,
             'url' => '/comics'
         ],
         [
             'name' => 'movies',
-            'active' => false,
             'url' => '/comics'
         ],
         [
             'name' => 'tv',
-            'active' => false,
             'url' => '/comics'
         ],
         [
             'name' => 'games',
-            'active' => false,
             'url' => '/comics'
         ],
         [
             'name' => 'collectibles',
-            'active' => false,
             'url' => '/comics'
         ],
         [
             'name' => 'videos',
-            'active' => false,
             'url' => '/comics'
         ],
         [
             'name' => 'fans',
-            'active' => false,
             'url' => '/comics'
         ],
         [
             'name' => 'news',
-            'active' => false,
             'url' => '/comics'
         ],
         [
             'name' => 'shop',
-            'active' => false,
             'url' => '/comics'
         ],
     ];
@@ -305,52 +295,42 @@ Route::get('/comics',function () {
     $links = [
         [
             'name' => 'home',
-            'active' => false,
             'url' => '/'
         ],
         [
             'name' => 'comics',
-            'active' => true,
             'url' => '/comics'
         ],
         [
             'name' => 'movies',
-            'active' => false,
             'url' => '/comics'
         ],
         [
             'name' => 'tv',
-            'active' => false,
             'url' => '/comics'
         ],
         [
             'name' => 'games',
-            'active' => false,
             'url' => '/comics'
         ],
         [
             'name' => 'collectibles',
-            'active' => false,
             'url' => '/comics'
         ],
         [
             'name' => 'videos',
-            'active' => false,
             'url' => '/comics'
         ],
         [
             'name' => 'fans',
-            'active' => false,
             'url' => '/comics'
         ],
         [
             'name' => 'news',
-            'active' => false,
             'url' => '/comics'
         ],
         [
             'name' => 'shop',
-            'active' => false,
             'url' => '/comics'
         ],
     ];
