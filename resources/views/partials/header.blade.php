@@ -2,8 +2,10 @@
     <img src="{{ Vite::asset('resources/img/dc-logo.png') }}" alt="dc logo">
     <ul>
         @foreach ($links as $link)
-            <li class="{{ $link['active'] ? 'active' : '' }}">
-                {{ $link['name'] }}
+            <li class="{{ Route::CurrentRouteName() == 'guest.' . $link['name'] ? 'active' : null }}">
+                <a href="{{ $link['url'] }}">
+                    {{ $link['name'] }}
+                </a>
             </li>
         @endforeach
     </ul>
